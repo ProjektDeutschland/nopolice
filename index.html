@@ -293,18 +293,17 @@
   </main>
 
   <script>
-    // Short excerpts verified against transcripts in the Ronald Reagan Presidential Library.
     const quotes = [
-      "Government is not the solution to our problem; government is the problem.",
-      "Government’s first duty is to protect the people, not run their lives.",
+      "The greatest leader is not necessarily the one who does the greatest things. He is the one that gets the people to do the greatest things.",
+      "We can’t help everyone, but everyone can help someone.",
       "The best social program we can have is a job.",
-      "If we lose freedom here, there’s no place to escape to.",
-      "Freedom is a fragile thing and it’s never more than one generation away from extinction.",
-      "The future doesn’t belong to the fainthearted; it belongs to the brave.",
-      "The key is freedom — freedom of thought, freedom of information, freedom of communication.",
-      "Status quo, you know, is Latin for ‘the mess we’re in.’",
-      "Entrepreneurs and their small enterprises are responsible for almost all the economic growth in the United States.",
-      "There is no such thing as a left or right. There’s only an up or down."
+      "Freedom is never more than one generation away from extinction. We didn't pass it to our children in the bloodstream. It must be fought for, protected, and handed on for them to do the same.",
+      "Live simply, love generously, care deeply, speak kindly, leave the rest to God.",
+      "Trust but verify.",
+      "If we ever forget that we are One Nation Under God, then we will be a nation gone under.",
+      "The nine most terrifying words in the English language are: 'I’m from the government and I’m here to help.'",
+      "When you can't make them see the light, make them feel the heat.",
+      "Government is not the solution to our problem, government is the problem."
     ];
 
     const stage = document.querySelector("#stage");
@@ -326,7 +325,6 @@
 
     introQuote.textContent = quotes[Math.floor(Math.random() * quotes.length)];
 
-    // Pre-decode the supplied media so the first cut feels immediate.
     ["reagan-color.png", "reagan-mono.png"].forEach((source) => {
       const image = new Image();
       image.src = source;
